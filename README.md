@@ -1,9 +1,9 @@
-# AI Agents Padel Court (WebGL)
+# 🎾 AI Agents Padel Court (WebGL)
 Isometric padel court. Four players in two pairs hold their spots and play a stylized rally: the ball arcs between them, there is no physics. Side A wears blue, side B sand. The score is simplified tennis (0, 15, 30, 40, game) on the HUD and on a sign at the far end. Click a player to chat; the rally pauses while the panel is open. Between points, partners talk to each other.
 
 Night court: blue turf, white lines, glass sides, mesh back walls, a net, four floodlights, and a bench outside the near side. Camera shots: full court, side A, side B, bench.
 
-## Run it on local LiteLLM (no API cost)
+## 🦙 Run it on local LiteLLM (no API cost)
 
 Models stay on your machine through [LiteLLM.Local](https://github.com/agustinafassina/LiteLLM.Local) and Ollama. No cloud key.
 
