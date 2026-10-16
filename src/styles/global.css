@@ -1,0 +1,59 @@
+:root {
+  --bg-app: #101820;
+  --bg-panel: rgba(42, 36, 32, 0.94);
+  --bg-panel-elevated: rgba(52, 44, 38, 0.96);
+  --bg-glass: rgba(40, 34, 30, 0.84);
+  --border-subtle: rgba(255, 248, 240, 0.1);
+  --border-warm: rgba(200, 106, 72, 0.28);
+  --text-primary: #f5f3ef;
+  --text-secondary: #c4b8a8;
+  --accent: #7eb6ff;
+  --accent-sage: #c4a882;
+  --accent-soft: rgba(224, 122, 88, 0.16);
+  --success: #7ab87a;
+  --warning: #e8c66a;
+  --danger: #e07a6a;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --shadow-panel: 0 12px 40px rgba(0, 0, 0, 0.32);
+  --font: 'DM Sans', system-ui, sans-serif;
+  --chat-panel-width: min(540px, 94vw);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font);
+  background: var(--bg-app);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 165, 116, 0.25);
+  border-radius: 3px;
+}

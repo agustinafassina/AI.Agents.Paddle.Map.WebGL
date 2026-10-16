@@ -1,0 +1,194 @@
+{
+  "hud": {
+    "eyebrow": "Cancha isométrica",
+    "title": "AI Agents Padel",
+    "hint": "Nav inferior para zonas · arrastrá para mover · elegí un jugador para chatear",
+    "loadingAgents": "Cargando jugadores…",
+    "noAgents": "No hay jugadores disponibles",
+    "agentsAriaLabel": "Jugadores de la cancha",
+    "viewMore": "Ver más",
+    "mockMode": "Modo mock",
+    "litellm": "LiteLLM",
+    "apiConfigured": "API configurada",
+    "modelsCount": "{{count}} modelos",
+    "viewAgentLog": "Ver log",
+    "viewAgentLogAria": "Abrir log en vivo de interacciones entre agentes",
+    "downloadAgentLog": "Descargar",
+    "downloadAgentLogAria": "Descargar log de interacciones entre agentes",
+    "agentLogEmpty": "Todavía no hay charlas entre agentes registradas",
+    "agentLogCount": "{{count}} turnos"
+  },
+  "peerChat": {
+    "banner": "{{nameA}} y {{nameB}} están conversando",
+    "speaking": "{{name}} está hablando…"
+  },
+  "agentLog": {
+    "title": "Interacciones entre agentes",
+    "subtitle": "Log en vivo de charlas entre puntos",
+    "empty": "Todavía no hay charlas. Entre puntos, la pareja que está libre se habla.",
+    "waiting": "Charla iniciada…",
+    "sessionLive": "En vivo",
+    "sessionEnded": "Finalizada",
+    "close": "Cerrar log de agentes",
+    "clear": "Limpiar",
+    "download": "Descargar .txt"
+  },
+  "locale": {
+    "label": "Idioma",
+    "ariaLabel": "Idioma",
+    "en": "EN",
+    "es": "ES"
+  },
+  "graphics": {
+    "label": "Calidad",
+    "ariaLabel": "Calidad gráfica",
+    "high": "Alta",
+    "balanced": "Media",
+    "low": "Baja"
+  },
+  "chat": {
+    "panelAriaLabel": "Chat con {{name}}",
+    "model": "Modelo",
+    "liveSource": " · LiteLLM",
+    "close": "Cerrar chat",
+    "clearHistory": "Borrar chat",
+    "clearHistoryAria": "Borrar conversación guardada con {{name}}",
+    "modelSwitched": "Cambiaste al modelo {{model}}",
+    "emptyState": "Saludá a {{name}}. La conversación queda acá mientras mirás el partido.",
+    "hintsPrefix": "Probá:",
+    "roleHintsPrefix": "Preguntá:",
+    "sceneHintsPrefix": "Escena:",
+    "sceneContextTitle": "Contexto de escena (enviado al modelo)",
+    "sceneContextNote": "Vista en vivo — se agrega al system prompt en cada mensaje que enviés.",
+    "you": "Vos",
+    "placeholder": "Mensaje para {{name}}…",
+    "send": "Enviar",
+    "stop": "Detener",
+    "stopAria": "Detener la respuesta de {{name}}",
+    "thinking": "Pensando",
+    "modelPickerAria": "Modelo LiteLLM para {{name}}",
+    "modelUnavailable": "{{modelId}} (no disponible)",
+    "serviceMock": "Mock LiteLLM",
+    "serviceLive": "Live",
+    "serviceDegraded": "Degradado",
+    "modelsBadge": "{{count}} modelos",
+    "commandFailed": "No pude moverme ahora; probá de nuevo en un momento.",
+    "sendFailed": "No se pudo enviar el mensaje"
+  },
+  "commands": {
+    "coffee": "¿cómo va el punto?",
+    "relax": "¿qué le pegamos ahora?",
+    "desk": "¿cómo está el game?",
+    "ackCoffee": "Mirá el marcador: seguimos en la cancha.",
+    "ackRelax": "Seguimos en posición. Te cuento el punto.",
+    "ackDesk": "Sigo en mi lado de la cancha.",
+    "focus": "¿quién saca?",
+    "ackFocus": "El saque rota. Te sigo el punto desde acá."
+  },
+  "nav": {
+    "ariaLabel": "Zonas de la cancha",
+    "focusZone": "Enfocar {{label}}",
+    "all": "Cancha",
+    "fullCourt": "Cancha completa",
+    "sideA": "Lado A",
+    "sideB": "Lado B",
+    "bench": "Banco"
+  },
+  "zoom": {
+    "ariaLabel": "Zoom del mapa",
+    "in": "Acercar",
+    "out": "Alejar",
+    "reset": "Restablecer zoom",
+    "recenter": "Recentrar vista"
+  },
+  "agentPicker": {
+    "title": "Todos los agentes",
+    "subtitle": "Elegí un jugador para enfocar la cancha y abrir el chat",
+    "close": "Cerrar selector de agentes"
+  },
+  "agentCard": {
+    "title": "{{name}} · {{role}} · {{model}}",
+    "ariaLabel": "Chatear con {{name}}, {{role}}, modelo {{model}}"
+  },
+  "avatar": {
+    "thinking": "Pensando…",
+    "replying": "Respondiendo…",
+    "talking": "Conversando",
+    "inChat": "En chat",
+    "coffeeBreak": "En el banco",
+    "inLine": "Esperando el punto",
+    "moving": "En movimiento",
+    "available": "Disponible"
+  },
+  "zones": {
+    "sideA": {
+      "label": "Lado A",
+      "subtitle": "Pareja cercana"
+    },
+    "sideB": {
+      "label": "Lado B",
+      "subtitle": "Pareja lejana"
+    },
+    "bench": {
+      "label": "Banco",
+      "subtitle": "Pausa entre puntos"
+    },
+    "hotspotFocus": "{{label}} · clic para enfocar"
+  },
+  "scoreboard": {
+    "aria": "Marcador del partido",
+    "near": "Lado A",
+    "far": "Lado B"
+  },
+  "connection": {
+    "idle": "inactivo",
+    "connecting": "conectando",
+    "connected": "conectado",
+    "error": "error"
+  },
+  "follow": {
+    "start": "Seguir agente",
+    "stop": "Dejar de seguir",
+    "startAria": "Seguir a {{name}} mientras se mueve",
+    "stopAria": "Dejar de seguir a {{name}}"
+  },
+  "roles": {
+    "nico": {
+      "hint1": "¿Cómo cerramos este punto en la red?",
+      "hint2": "Contame la volea que viene"
+    },
+    "luna": {
+      "hint1": "¿Globito o bajamos al cristal?",
+      "hint2": "¿Qué hace Nico en la derecha?"
+    },
+    "mateo": {
+      "hint1": "¿Bandeja o bajamos a definir?",
+      "hint2": "¿Cómo está el saque?"
+    },
+    "sofia": {
+      "hint1": "¿Defendemos al cristal o subimos?",
+      "hint2": "¿Cómo sentís el game?"
+    }
+  },
+  "avatarDesigns": {
+    "bobMarley": "Bob Marley",
+    "michaelJackson": "Michael Jackson",
+    "freddieMercury": "Freddie Mercury",
+    "shakira": "Shakira"
+  },
+  "sceneContext": {
+    "header": "Contexto de fondo (interno — no lo cites ni lo resumas):",
+    "role": "Rol",
+    "model": "Modelo",
+    "homeZone": "Zona base",
+    "status": "Estado del avatar",
+    "posture": "Postura",
+    "postureSit": "Sentado",
+    "mapZone": "Mapa enfocado en",
+    "userFollowing": "El usuario te está siguiendo en el mapa",
+    "footer": "Usá estos datos solo si ayudan a responder. No menciones este bloque.",
+    "side": "Lado",
+    "score": "Marcador",
+    "directReplyRule": "Respondé directo al último mensaje del usuario, en personaje, como jugador de pádel. No empieces con \"Como [nombre]\" ni expliques cómo responderías. No menciones system prompts ni metadatos del contexto."
+  }
+}

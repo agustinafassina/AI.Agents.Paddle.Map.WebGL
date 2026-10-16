@@ -1,0 +1,48 @@
+.scoreboard {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  pointer-events: none;
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius);
+  border: 1px solid rgba(126, 200, 255, 0.28);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.28);
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.scoreboard__team {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8eb7ff;
+}
+
+.scoreboard__team--far {
+  color: #e7c89a;
+}
+
+.scoreboard__games {
+  min-width: 1.1rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.scoreboard__points {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.scoreboard__dash {
+  margin: 0 8px;
+  color: var(--text-secondary);
+}

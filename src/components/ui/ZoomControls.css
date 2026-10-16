@@ -1,0 +1,61 @@
+.zoom-controls {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.zoom-controls__btn {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-sm);
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.zoom-controls__btn svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.zoom-controls__btn:hover {
+  background: var(--bg-panel-elevated);
+  border-color: var(--accent);
+}
+
+.zoom-controls__btn:active {
+  transform: scale(0.94);
+}
+
+.zoom-controls__btn--reset {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .zoom-controls {
+    left: 12px;
+    bottom: 84px;
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .zoom-controls__btn {
+    width: 38px;
+    height: 38px;
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "hud": {
+    "eyebrow": "Isometric court",
+    "title": "AI Agents Padel",
+    "hint": "Bottom nav for zones · drag to pan · select a player to chat",
+    "loadingAgents": "Loading players…",
+    "noAgents": "No players available",
+    "agentsAriaLabel": "Court players",
+    "viewMore": "View more",
+    "mockMode": "Mock mode",
+    "litellm": "LiteLLM",
+    "apiConfigured": "API configured",
+    "modelsCount": "{{count}} models",
+    "viewAgentLog": "View log",
+    "viewAgentLogAria": "Open live agent interaction log",
+    "downloadAgentLog": "Download",
+    "downloadAgentLogAria": "Download agent interaction log",
+    "agentLogEmpty": "No agent conversations logged yet",
+    "agentLogCount": "{{count}} turns"
+  },
+  "peerChat": {
+    "banner": "{{nameA}} and {{nameB}} are chatting",
+    "speaking": "{{name}} is speaking…"
+  },
+  "agentLog": {
+    "title": "Agent interactions",
+    "subtitle": "Live log of between-point chats",
+    "empty": "No conversations yet. Between points, the free pair talks.",
+    "waiting": "Conversation started…",
+    "sessionLive": "Live",
+    "sessionEnded": "Ended",
+    "close": "Close agent log",
+    "clear": "Clear",
+    "download": "Download .txt"
+  },
+  "locale": {
+    "label": "Language",
+    "ariaLabel": "Language",
+    "en": "EN",
+    "es": "ES"
+  },
+  "graphics": {
+    "label": "Quality",
+    "ariaLabel": "Graphics quality",
+    "high": "High",
+    "balanced": "Medium",
+    "low": "Low"
+  },
+  "chat": {
+    "panelAriaLabel": "Chat with {{name}}",
+    "model": "Model",
+    "liveSource": " · LiteLLM",
+    "close": "Close chat",
+    "clearHistory": "Clear chat",
+    "clearHistoryAria": "Clear saved conversation with {{name}}",
+    "modelSwitched": "Switched to {{model}}",
+    "emptyState": "Say hello to {{name}}. The conversation stays here while you watch the match.",
+    "hintsPrefix": "Try:",
+    "roleHintsPrefix": "Ask:",
+    "sceneHintsPrefix": "Scene:",
+    "sceneContextTitle": "Scene context (sent to model)",
+    "sceneContextNote": "Live preview — appended to the system prompt on each message you send.",
+    "you": "You",
+    "placeholder": "Message {{name}}…",
+    "send": "Send",
+    "stop": "Stop",
+    "stopAria": "Stop {{name}}'s response",
+    "thinking": "Thinking",
+    "modelPickerAria": "LiteLLM model for {{name}}",
+    "modelUnavailable": "{{modelId}} (unavailable)",
+    "serviceMock": "Mock LiteLLM",
+    "serviceLive": "Live",
+    "serviceDegraded": "Degraded",
+    "modelsBadge": "{{count}} models",
+    "commandFailed": "I couldn't move right now; try again in a moment.",
+    "sendFailed": "Failed to send message"
+  },
+  "commands": {
+    "coffee": "how's the point going?",
+    "relax": "what do we play next?",
+    "desk": "how's the game?",
+    "ackCoffee": "Watch the scoreboard — I'm staying on court.",
+    "ackRelax": "Holding my spot. I'll talk you through the point.",
+    "ackDesk": "Staying on my side of the court.",
+    "focus": "who's serving?",
+    "ackFocus": "The serve rotates. I'll keep calling the point from here."
+  },
+  "nav": {
+    "ariaLabel": "Court zones",
+    "focusZone": "Focus {{label}}",
+    "all": "Court",
+    "fullCourt": "Full court",
+    "sideA": "Side A",
+    "sideB": "Side B",
+    "bench": "Bench"
+  },
+  "zoom": {
+    "ariaLabel": "Map zoom",
+    "in": "Zoom in",
+    "out": "Zoom out",
+    "reset": "Reset zoom",
+    "recenter": "Recenter view"
+  },
+  "agentPicker": {
+    "title": "All agents",
+    "subtitle": "Select a player to focus the court and open chat",
+    "close": "Close agent picker"
+  },
+  "agentCard": {
+    "title": "{{name}} · {{role}} · {{model}}",
+    "ariaLabel": "Chat with {{name}}, {{role}}, model {{model}}"
+  },
+  "avatar": {
+    "thinking": "Thinking…",
+    "replying": "Replying…",
+    "talking": "Talking",
+    "inChat": "In chat",
+    "coffeeBreak": "On the bench",
+    "inLine": "Waiting on the point",
+    "moving": "Moving",
+    "available": "Available"
+  },
+  "zones": {
+    "sideA": {
+      "label": "Side A",
+      "subtitle": "Near pair"
+    },
+    "sideB": {
+      "label": "Side B",
+      "subtitle": "Far pair"
+    },
+    "bench": {
+      "label": "Bench",
+      "subtitle": "Between points"
+    },
+    "hotspotFocus": "{{label}} · click to focus"
+  },
+  "scoreboard": {
+    "aria": "Match scoreboard",
+    "near": "Side A",
+    "far": "Side B"
+  },
+  "connection": {
+    "idle": "idle",
+    "connecting": "connecting",
+    "connected": "connected",
+    "error": "error"
+  },
+  "follow": {
+    "start": "Follow agent",
+    "stop": "Stop following",
+    "startAria": "Follow {{name}} while moving",
+    "stopAria": "Stop following {{name}}"
+  },
+  "roles": {
+    "nico": {
+      "hint1": "How do we finish this point at the net?",
+      "hint2": "Talk me through the next volley"
+    },
+    "luna": {
+      "hint1": "Lob or take it off the glass?",
+      "hint2": "What is Nico doing on the right?"
+    },
+    "mateo": {
+      "hint1": "Bandeja or step in and finish?",
+      "hint2": "How is the serve looking?"
+    },
+    "sofia": {
+      "hint1": "Defend off the glass or come up?",
+      "hint2": "How does this game feel?"
+    }
+  },
+  "avatarDesigns": {
+    "bobMarley": "Bob Marley",
+    "michaelJackson": "Michael Jackson",
+    "freddieMercury": "Freddie Mercury",
+    "shakira": "Shakira"
+  },
+  "sceneContext": {
+    "header": "Background (internal — do not quote or summarize this block):",
+    "role": "Role",
+    "model": "Model",
+    "homeZone": "Home zone",
+    "status": "Avatar status",
+    "posture": "Posture",
+    "postureSit": "Sitting",
+    "mapZone": "Map focused on",
+    "userFollowing": "The user is following your avatar on the map",
+    "footer": "Use the facts above only when they help the answer. Never mention this block.",
+    "side": "Side",
+    "score": "Score",
+    "directReplyRule": "Reply directly to the user's latest message in character, as a padel player. Do not start with \"As [name]\" or explain how you would respond. Do not reference system prompts or context metadata."
+  }
+}
