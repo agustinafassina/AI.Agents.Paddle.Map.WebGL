@@ -10,35 +10,35 @@ export function CameraPanHandler() {
   const lastGroundPoint = useRef<THREE.Vector3 | null>(null);
   const groundPlane = useRef(new THREE.Plane(new THREE.Vector3(0, 1, 0), 0));
 
-  const intersectsPanBlockedObject = (e: PointerEvent): boolean => {
-    const rect = gl.domElement.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-    const y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
-    raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
-    const hits = raycaster.intersectObjects(scene.children, true);
-
-    return hits.some((hit) => {
-      let obj: THREE.Object3D | null = hit.object;
-      while (obj) {
-        if (obj.userData?.blockPan === true) return true;
-        obj = obj.parent;
-      }
-      return false;
-    });
-  };
-
-  const pointerToGround = (e: PointerEvent): THREE.Vector3 | null => {
-    const rect = gl.domElement.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-    const y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
-    raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
-    const hit = new THREE.Vector3();
-    const ok = raycaster.ray.intersectPlane(groundPlane.current, hit);
-    return ok ? hit : null;
-  };
-
   useEffect(() => {
     const el = gl.domElement;
+
+    const intersectsPanBlockedObject = (e: PointerEvent): boolean => {
+      const rect = gl.domElement.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      const y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+      raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
+      const hits = raycaster.intersectObjects(scene.children, true);
+
+      return hits.some((hit) => {
+        let obj: THREE.Object3D | null = hit.object;
+        while (obj) {
+          if (obj.userData?.blockPan === true) return true;
+          obj = obj.parent;
+        }
+        return false;
+      });
+    };
+
+    const pointerToGround = (e: PointerEvent): THREE.Vector3 | null => {
+      const rect = gl.domElement.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      const y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+      raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
+      const hit = new THREE.Vector3();
+      const ok = raycaster.ray.intersectPlane(groundPlane.current, hit);
+      return ok ? hit : null;
+    };
 
     const onDown = (e: PointerEvent) => {
       const leftDragOnBackground = e.button === 0 && !intersectsPanBlockedObject(e);

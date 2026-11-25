@@ -295,7 +295,9 @@ export function resolvePenetration(
   position: [number, number, number],
   skipFurniture = false,
 ): [number, number, number] {
-  let [x, y, z] = withBounds(position);
+  const bounded = withBounds(position);
+  const y = bounded[1];
+  let [x, , z] = bounded;
   if (skipFurniture) return [x, y, z];
 
   const r = AGENT_COLLISION_RADIUS;
@@ -460,7 +462,8 @@ export function separateFromAgents(
   skipFurniture = false,
   minDist = AGENT_PERSONAL_SPACE,
 ): [number, number, number] {
-  let [x, y, z] = position;
+  const y = position[1];
+  let [x, , z] = position;
 
   for (const other of others) {
     if (other.id === selfId) continue;
